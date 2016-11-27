@@ -4,7 +4,9 @@ eFF is a simple library to build a fillable and printable form
 
 ## How it works
 This simple library allows you to design your fillable forms in pure HTML and have them printed out in PDF (non automatic process at the moment) in a easy and clean way.
+
 Plus, this library allows you to pass some json data to the page and automagically fill the form with the given information.
+
 Less fillable PDF and more HTML5 compliant forms!
 
 ## How to use it
