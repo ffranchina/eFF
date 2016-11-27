@@ -1,0 +1,256 @@
+/* _____ RESET _____ */
+
+* {
+	margin: 0;
+	padding: 0;
+	line-height: 2;
+}
+
+
+/* _____ GLOBAL & CUSTOM _____ */
+
+body {
+	font-size: 11pt;
+    font-family: sans;
+    background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCI+CjxyZWN0IHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCIgZmlsbD0iI2ZhZmFmYSI+PC9yZWN0Pgo8cmVjdCB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSIjYmJiIj48L3JlY3Q+Cjwvc3ZnPg==");
+}
+
+#eff_container {
+    width: 210mm;
+    margin: 2rem auto;
+    background: #fff;  
+    padding: 4em;
+    border: 1px solid #ddd;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .5);
+}
+
+#eff_print {
+    display: block;
+    width: 210mm;
+    margin: 2rem auto 4rem;
+    display: block;
+    background-color: #fff;
+    color: #666;
+    border: 1px solid #ddd;
+    border-radius: .4rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    line-height: 4rem;
+    transition: .2s all;
+}
+
+#eff_print:focus,
+#eff_print:hover {
+    border-color: #333;
+    color: #333;
+}
+
+
+/* _____ TYPOGRAPHY _____ */
+
+h1, h2, h3,
+h4, h5, h6 {
+	text-align: center;
+}
+
+h1 {
+	font-size: 2.3rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+h4 {
+	font-size: 1.2rem;
+}
+
+h5 {
+	font-size: 1rem;
+}
+
+h6 {
+	font-size: .8rem;
+}
+
+p, li {
+	text-align: justify;
+}
+
+ol {
+  list-style: decimal outside;
+}
+
+ul {
+  list-style: circle outside;
+}
+
+li {
+	margin-left: 2rem;
+	padding-left: 2rem;
+}
+
+.centered {
+    text-align: center;
+}
+
+/* _____ FORM _____ */
+
+input[type='email'],
+input[type='number'],
+input[type='password'],
+input[type='search'],
+input[type='tel'],
+input[type='text'],
+input[type='url'],
+select {
+	border: 0;
+	border-bottom: 1px solid #353535;
+    font-size: 1.1rem;
+	padding: 0 1.5em;
+	height: 1.5em;
+    width: 100%;
+	box-sizing: border-box;
+    box-shadow: 1px 6px 10px -8px rgba(0, 0, 0, .5);
+}
+
+input[type='email']:focus,
+input[type='number']:focus,
+input[type='password']:focus,
+input[type='search']:focus,
+input[type='tel']:focus,
+input[type='text']:focus,
+input[type='url']:focus,
+textarea:focus,
+select:focus {
+    outline: 0;
+}
+
+select {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="#d1d1d1" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>') center right no-repeat;
+    padding-right: 3.0rem;
+}
+
+select:focus {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="#9b4dca" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>');
+}
+
+.required:after {
+	content: '*';
+	display: inline-block;
+	margin: 0 .1em;
+	color: red;
+	font-size: .9em;
+	vertical-align: top;
+}
+
+
+/* _____ GRID _____ */
+
+.col {
+    float:left;
+    box-sizing:border-box;
+    min-height: 1px;
+    margin-left:1%;
+    padding:0 0.5%;
+}
+
+.row {
+    margin-bottom: .5rem;
+}
+
+.row:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.row .col:first-child {
+    margin-left:0;
+}
+
+.col_1 {
+    width:7.41666666667%;
+}
+.col_2 {
+    width:15.8333333333%;
+}
+.col_3 {
+    width:24.25%;
+}
+.col_4 {
+    width:32.6666666667%;
+}
+.col_5 {
+    width:41.0833333333%;
+}
+.col_6 {
+    width:49.5%;
+}
+.col_7 {
+    width:57.9166666667%;
+}
+.col_8 {
+    width:66.3333333333%;
+}
+.col_9 {
+    width:74.75%;
+}
+.col_10 {
+    width:83.1666666667%;
+}
+.col_11 {
+    width:91.5833333333%;
+}
+.col_12 {
+    margin-left:0;
+    width:100%;
+}
+
+
+/* _____ PRINTING _____ */
+
+@media print {
+
+    @page {
+        size: A4;
+        margin: 2.5cm;
+    }
+
+    * {
+        box-shadow: none !important;
+        line-height: 1.5 !important;
+    }
+
+    h1, h2, h3,
+    h4, h5, h6 {
+        page-break-after: avoid;
+    }
+
+    li, p {
+        page-break-inside: avoid;
+    }
+
+    .asfterbreak {
+        page-break-before: always;
+    }
+
+    #eff_container {
+        border: none;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    #eff_print {
+        display: none;
+    }
+    
+}
+
