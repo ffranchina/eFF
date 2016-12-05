@@ -264,7 +264,7 @@ select:focus {
         page-break-inside: avoid;
     }
 
-    .asfterbreak {
+    .afterbreak {
         page-break-before: always;
     }
 
