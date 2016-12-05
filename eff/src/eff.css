@@ -154,11 +154,11 @@ select:focus {
 /* _____ GRID _____ */
 
 .col {
-    float:left;
-    box-sizing:border-box;
+    float: left;
+    box-sizing: border-box;
     min-height: 1px;
-    margin-left:1%;
-    padding:0 0.5%;
+    margin-left: 0;
+    padding: 0 0.5%;
 }
 
 .row {
@@ -176,39 +176,66 @@ select:focus {
 }
 
 .col_1 {
-    width:7.41666666667%;
+    width: 6.25%;
 }
+
 .col_2 {
-    width:15.8333333333%;
+    width: 12.5%;
 }
+
 .col_3 {
-    width:24.25%;
+    width: 18.75%;
 }
+
 .col_4 {
-    width:32.6666666667%;
+    width: 25.0%;
 }
+
 .col_5 {
-    width:41.0833333333%;
+    width: 31.25%;
 }
+
 .col_6 {
-    width:49.5%;
+    width: 37.5%;
 }
+
 .col_7 {
-    width:57.9166666667%;
+    width: 43.75%;
 }
+
 .col_8 {
-    width:66.3333333333%;
+    width: 50.0%;
 }
+
 .col_9 {
-    width:74.75%;
+    width: 56.25%;
 }
+
 .col_10 {
-    width:83.1666666667%;
+    width: 62.5%;
 }
+
 .col_11 {
-    width:91.5833333333%;
+    width: 68.75%;
 }
+
 .col_12 {
+    width: 75.0%;
+}
+
+.col_13 {
+    width: 81.25%;
+}
+
+.col_14 {
+    width: 87.5%;
+}
+
+.col_15 {
+    width: 93.75%;
+}
+
+.col_16 {
     margin-left:0;
     width:100%;
 }
